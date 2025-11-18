@@ -1,2 +1,2 @@
-# geometric_intelligence
+# Geometric Intelligence
 Geometric Intelligence Astronomy
