@@ -62,6 +62,7 @@ source .venv/bin/activate
 ```
 
 ## 4) Step 4 - inference with CPU AI Inference demo (CPU)
+
 ```bash
 # python unet_cpu_infer.py --size 128
 # Now check newly created folders and images , please kindly fix your python errors by yourself.
