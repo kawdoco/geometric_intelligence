@@ -5,7 +5,9 @@ Inline comparison, input gallery, and pipeline:
 
 <p align="center">
   <img src="comparison.png" alt="Comparison" width="48%">
-  <img src="input_gallery(1).png" alt="Input Gallery" width="48%"><br/>
+  <br>
+  <img src="input_gallery(1).png" alt="Input Gallery" width="48%">
+  <br/>
   <img src="methodology_pipeline_clean_h(1).png" alt="Methodology Pipeline" width="80%">
 </p>
 
@@ -59,7 +61,7 @@ source .venv/bin/activate
 # (venv) python unet_cpu_train.py --epochs 5 --samples 512 --size 128 --noise 0.02
 ```
 
-## 4) Step 4 - inference with CPU AIInference demo (CPU)
+## 4) Step 4 - inference with CPU AI Inference demo (CPU)
 ```bash
 # python unet_cpu_infer.py --size 128
 # Now check newly created folders and images , please kindly fix your python errors by yourself.
@@ -68,17 +70,7 @@ source .venv/bin/activate
 # (target κ vs predicted κ̂ from training set)infer_pred.png (γ₁, γ₂, and predicted κ̂ for a new sample)
 ```
 
-<br>
-<img width="895" height="326" alt="image" src="https://github.com/user-attachments/assets/c21d7d59-8908-4546-af60-349f42c90d59" />
-
-<br>
-<img width="991" height="296" alt="image" src="https://github.com/user-attachments/assets/51d07388-00af-42b6-9b98-0c76e2779c25" />
-
-
-<br>
-<img width="464" height="296" alt="image" src="https://github.com/user-attachments/assets/32fa6275-181d-4508-85f4-72c353abd6c7" />
-
-
-
-python unet_cpu_infer.py -h
-python lensing_without_ai.py -h
+## 4) Step 5 - Upload 
+```bash
+https://forms.gle/3899XVpV9KLLwQRz8
+```
