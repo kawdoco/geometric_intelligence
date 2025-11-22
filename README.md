@@ -30,7 +30,11 @@ python -m venv .venv
 # Linux/Mac:
 source .venv/bin/activate
 
+```
+
 ## 2) Step 2 Install (CPU-only)
+
+```bash
 # (venv) python -m pip install --upgrade pip
 # (venv) python -m pip install numpy matplotlib pillow
 
@@ -39,9 +43,11 @@ source .venv/bin/activate
 # (venv) python lensing_without_ai.py
 
 # Check the auto created folder and check images that you generated
+```
 
 ## 3) Step 3 – play with CPU AI Install Packages
 
+```bash
 # (venv) python -m pip install --upgrade pip
 # (venv) python -m pip uninstall -y torch numpy
 # (venv) python -m pip install "numpy==1.26.4”
@@ -51,14 +57,16 @@ source .venv/bin/activate
 # Then run with the venv’s python:Train on CPU (small & fast)
 
 # (venv) python unet_cpu_train.py --epochs 5 --samples 512 --size 128 --noise 0.02
+```
 
 ## 4) Step 4 - inference with CPU AIInference demo (CPU)
-
+```bash
 # python unet_cpu_infer.py --size 128
 # Now check newly created folders and images , please kindly fix your python errors by yourself.
 # This will create an outputs_unet/ folder
 # with:tiny_unet_cpu.pth (weights)train_curve.png (loss vs epoch)sample_train_pred.png
 # (target κ vs predicted κ̂ from training set)infer_pred.png (γ₁, γ₂, and predicted κ̂ for a new sample)
+```
 
 <br>
 <img width="895" height="326" alt="image" src="https://github.com/user-attachments/assets/c21d7d59-8908-4546-af60-349f42c90d59" />
