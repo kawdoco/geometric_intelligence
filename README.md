@@ -65,7 +65,7 @@ source .venv/bin/activate
 ```bash
 # python unet_cpu_infer.py --size 128
 # Now check newly created folders and images , please kindly fix your python errors by yourself.
-# This will create an outputs_unet/ folder
+# This will create an outputs_unet/ folder
 # with:tiny_unet_cpu.pth (weights)train_curve.png (loss vs epoch)sample_train_pred.png
 # (target κ vs predicted κ̂ from training set)infer_pred.png (γ₁, γ₂, and predicted κ̂ for a new sample)
 ```
