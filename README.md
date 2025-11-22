@@ -47,7 +47,7 @@ source .venv/bin/activate
 # Check the auto created folder and check images that you generated
 ```
 
-## 3) Step 3 – play with CPU AI Install Packages
+## 3) Step 3 – play with CPU AI Install Packages
 
 ```bash
 # (venv) python -m pip install --upgrade pip
