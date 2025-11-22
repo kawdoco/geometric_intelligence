@@ -17,7 +17,7 @@ Inline comparison, input gallery, and pipeline:
 
 ---
 
-## 1) Quick Start
+## 1) Step 1
 
 ```bash
 # 1) Clone
@@ -30,13 +30,47 @@ python -m venv .venv
 # Linux/Mac:
 source .venv/bin/activate
 
-# 3) Install (CPU-only)
-python -m pip install --upgrade pip
-# Minimal set:
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
-pip install numpy opencv-python pillow matplotlib scikit-image tqdm pyyaml
+## 2) Step 2 Install (CPU-only)
+# (venv) python -m pip install --upgrade pip
+# (venv) python -m pip install numpy matplotlib pillow
 
-# 4) Check help
-python unet_cpu_train.py -h
+# Then run with the venv’s python:
+
+# (venv) python lensing_without_ai.py
+
+# Check the auto created folder and check images that you generated
+
+## 3) Step 3 – play with CPU AI Install Packages
+
+# (venv) python -m pip install --upgrade pip
+# (venv) python -m pip uninstall -y torch numpy
+# (venv) python -m pip install "numpy==1.26.4”
+# CPU-only torch wheel (works on Mac/CPU)
+# (venv) python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+# Then run with the venv’s python:Train on CPU (small & fast)
+
+# (venv) python unet_cpu_train.py --epochs 5 --samples 512 --size 128 --noise 0.02
+
+## 4) Step 4 - inference with CPU AIInference demo (CPU)
+
+# python unet_cpu_infer.py --size 128
+# Now check newly created folders and images , please kindly fix your python errors by yourself.
+# This will create an outputs_unet/ folder
+# with:tiny_unet_cpu.pth (weights)train_curve.png (loss vs epoch)sample_train_pred.png
+# (target κ vs predicted κ̂ from training set)infer_pred.png (γ₁, γ₂, and predicted κ̂ for a new sample)
+
+<br>
+<img width="895" height="326" alt="image" src="https://github.com/user-attachments/assets/c21d7d59-8908-4546-af60-349f42c90d59" />
+
+<br>
+<img width="991" height="296" alt="image" src="https://github.com/user-attachments/assets/51d07388-00af-42b6-9b98-0c76e2779c25" />
+
+
+<br>
+<img width="464" height="296" alt="image" src="https://github.com/user-attachments/assets/32fa6275-181d-4508-85f4-72c353abd6c7" />
+
+
+
 python unet_cpu_infer.py -h
 python lensing_without_ai.py -h
