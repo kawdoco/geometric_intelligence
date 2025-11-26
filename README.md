@@ -44,7 +44,7 @@ source .venv/bin/activate
 
 # (venv) python lensing_without_ai.py
 
-# Check the auto created folder and check images that you generated
+# Check the auto created folder and check images that you generated
 ```
 
 ## 3) Step 3 – play with CPU AI Install Packages
