@@ -37,12 +37,12 @@ source .venv/bin/activate
 ## 2) Step 2 Install (CPU-only)
 
 ```bash
-# (venv) python -m pip install --upgrade pip
+# (venv) python -m pip install --upgrade pip
 # (venv) python -m pip install numpy matplotlib pillow
 
-# Then run with the venv’s python:
+# Then run with the venv’s python:
 
-# (venv) python lensing_without_ai.py
+# (venv) python lensing_without_ai.py
 
 # Check the auto created folder and check images that you generated
 ```
@@ -50,13 +50,13 @@ source .venv/bin/activate
 ## 3) Step 3 – play with CPU AI Install Packages
 
 ```bash
-# (venv) python -m pip install --upgrade pip
+# (venv) python -m pip install --upgrade pip
 # (venv) python -m pip uninstall -y torch numpy
 # (venv) python -m pip install "numpy==1.26.4”
 # CPU-only torch wheel (works on Mac/CPU)
 # (venv) python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
 
-# Then run with the venv’s python:Train on CPU (small & fast)
+# Then run with the venv’s python:Train on CPU (small & fast)
 
 # (venv) python unet_cpu_train.py --epochs 5 --samples 512 --size 128 --noise 0.02
 ```
@@ -67,8 +67,8 @@ source .venv/bin/activate
 # python unet_cpu_infer.py --size 128
 # Now check newly created folders and images , please kindly fix your python errors by yourself.
 # This will create an outputs_unet/ folder
-# with:tiny_unet_cpu.pth (weights) train_curve.png (loss vs epoch)sample_train_pred.png
-# (target κ vs predicted κ̂ from training set)infer_pred.png (γ₁, γ₂, and predicted κ̂ for a new sample)
+# with:tiny_unet_cpu.pth (weights) train_curve.png (loss vs epoch) sample_train_pred.png
+# (target κ vs predicted κ̂ from training set) infer_pred.png (γ₁, γ₂, and predicted κ̂ for a new sample)
 ```
 
 ## 4) Step 5 - Upload 
