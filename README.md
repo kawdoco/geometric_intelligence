@@ -24,7 +24,7 @@ Inline comparison, input gallery, and pipeline:
 ```bash
 # 1) Clone
 git clone kawdoco/geometric_intelligence
-cd geometry-lensing-unet
+cd geometric_intelligence
 
 # 2) (Optional) create a venv
 python -m venv .venv
