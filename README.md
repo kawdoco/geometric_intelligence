@@ -40,11 +40,11 @@ source .venv/bin/activate
 # (venv) python -m pip install --upgrade pip
 # (venv) python -m pip install numpy matplotlib pillow
 
-# Then run with the venv’s python:
+# Then run with the venv’s python:
 
 # (venv) python lensing_without_ai.py
 
-# Check the auto created folder and check images that you generated
+# Check the auto created folder and check images that you generated
 ```
 
 ## 3) Step 3 – play with CPU AI Install Packages
@@ -61,7 +61,7 @@ source .venv/bin/activate
 # (venv) python unet_cpu_train.py --epochs 5 --samples 512 --size 128 --noise 0.02
 ```
 
-## 4) Step 4 - inference with CPU AI Inference demo (CPU)
+## 4) Step 4 - inference with CPU A Inference demo (CPU)
 
 ```bash
 # python unet_cpu_infer.py --size 128
